@@ -32,3 +32,8 @@ hashmap.c:55:39: error: expected expression before ‘HashMap’
       |                                       ^~~~~~~
 Compilation failed
 482abb9
+Thu 08 Sep 2022 11:08:15 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+9f7577c
