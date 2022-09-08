@@ -50,9 +50,12 @@ void enlarge(HashMap * map) {
 
 }
 
+//1.- Implemente la función *createMap* en el archivo hashmap.c. Esta función crea una variable de tipo HashMap, inicializa el arreglo de buckets con casillas nulas, inicializa el resto de variables y retorna el mapa. Inicialice el índice current a -1.
+
 
 HashMap * createMap(long capacity) {
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
+    new->current = -1;
     return new;
 }
 
