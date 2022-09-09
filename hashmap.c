@@ -58,7 +58,7 @@ HashMap * createMap(long capacity) {
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
   
     for (i=0;i<capacity;i++){
-      Pair * p = createPair(NULL,NULL)
+      Pair * p = createPair(NULL,NULL);
       new->buckets[i]= p;
     }
   
