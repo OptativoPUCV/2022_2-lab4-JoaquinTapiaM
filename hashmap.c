@@ -63,7 +63,7 @@ HashMap * createMap(long capacity) {
       
     }
     
-    new->current = -1;
+    new->current = 1;
     return new;
 }
 
