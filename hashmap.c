@@ -54,6 +54,7 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
+  long i;
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
     for (i=0;i<capacity;i++){
       new->buckets[i]= NULL;
