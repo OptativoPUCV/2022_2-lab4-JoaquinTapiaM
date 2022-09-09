@@ -69,3 +69,8 @@ hashmap.c:19:27: note: expected ‘char *’ but argument is of type ‘long int
 cc1: all warnings being treated as errors
 Compilation failed
 b57c037
+Fri 09 Sep 2022 12:31:49 PM UTC: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  0|0
+933b67f
