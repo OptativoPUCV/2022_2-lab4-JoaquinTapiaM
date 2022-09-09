@@ -79,3 +79,14 @@ Fri 09 Sep 2022 12:33:33 PM UTC:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 e5415d1
+Fri 09 Sep 2022 12:35:01 PM UTC: 
+ hashmap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:58:10: error: ‘i’ undeclared (first use in this function)
+   58 |     for (i=0;i<capacity;i++){
+      |          ^
+hashmap.c:58:10: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+dfa207b
