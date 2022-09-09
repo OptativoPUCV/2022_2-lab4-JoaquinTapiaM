@@ -293,3 +293,13 @@ Fri 09 Sep 2022 12:53:40 PM UTC:
  tests:  1|5
 total_score: 10/70
 45a938d
+Fri 09 Sep 2022 01:07:39 PM UTC: 
+ hashmap.c | 14 +++++++++++++-
+ 1 file changed, 13 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:54:25: error: ‘Pair’ has no member named ‘map’
+   54 |       map->buckets[Hash]->map->buckets[Hash+1];
+      |                         ^~
+Compilation failed
+9f62aed
