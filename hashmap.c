@@ -57,11 +57,7 @@ HashMap * createMap(long capacity) {
     long i;  
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
     new->capacity = capacity;
-    
-    for(i=0; i<capacity;i++){
-      new->buckets[i]->key = NULL;
-      new->buckets[i]->value = NULL;
-    }
+
     new->size = 0;
     new->current = -1;
     return new;
