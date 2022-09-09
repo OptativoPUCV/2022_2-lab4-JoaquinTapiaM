@@ -54,7 +54,7 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-    long i;  
+    //long i;  
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
     new->capacity = capacity;
 
