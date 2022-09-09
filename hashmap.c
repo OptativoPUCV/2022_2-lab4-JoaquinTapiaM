@@ -54,12 +54,12 @@ void enlarge(HashMap * map) {
 
 
 HashMap * createMap(long capacity) {
-    //long i;  
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
     new->capacity = capacity;
-
     new->size = 0;
     new->current = -1;
+
+    new->buckets = (Pair**)calloc(capacity,sizeof(Pair))
     return new;
 }
 
