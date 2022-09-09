@@ -52,11 +52,13 @@ void insertMap(HashMap * map, char * key, void * value) {
     long i = hash(key,map->capacity);
     while(map->buckets[i]!=NULL){
       i++;
+      if(i==map->capacity){
+      i=0
+    }
     }
     map->buckets[i]=p;
     map->size +=1;
     map->current = i;
-    
 }
 
 void enlarge(HashMap * map) {
