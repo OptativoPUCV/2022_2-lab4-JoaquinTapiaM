@@ -102,6 +102,10 @@ Pair * searchMap(HashMap * map,  char * key) {
     long i = hash(key,map->capacity);
     long cont = 0;
     while(1){
+      if(map->buckets[i]==NULL){
+        return NULL;
+      }
+      
       if(is_equal(map->buckets[i]->key,key)==1){
         map->current = i;
         return map->buckets[i];
