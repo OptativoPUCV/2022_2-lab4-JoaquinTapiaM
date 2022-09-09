@@ -60,7 +60,7 @@ HashMap * createMap(long capacity) {
     for (i=0;i<capacity;i++){
       new->buckets[i]= createPair(NULL,NULL);
     }
-    new->capacity = capacity
+    new->capacity = capacity;
     new->current = -1;
     return new;
 }
