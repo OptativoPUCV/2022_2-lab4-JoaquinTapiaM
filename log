@@ -303,3 +303,9 @@ hashmap.c:54:25: error: ‘Pair’ has no member named ‘map’
       |                         ^~
 Compilation failed
 9f62aed
+Fri 09 Sep 2022 01:07:54 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+841feec

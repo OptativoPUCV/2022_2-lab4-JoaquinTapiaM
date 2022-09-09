@@ -51,7 +51,7 @@ void insertMap(HashMap * map, char * key, void * value) {
     Pair * p = createPair(key,value);
     long Hash = hash(key,map->capacity);
     while(map->buckets[Hash]!=NULL){
-      map->buckets[Hash]->map->buckets[Hash+1];
+      map->buckets[Hash] = map->buckets[Hash+1];
     }
     map->buckets[Hash]=p;
 }
