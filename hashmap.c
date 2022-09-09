@@ -59,7 +59,7 @@ HashMap * createMap(long capacity) {
     new->capacity = capacity;
     
     for(i=0; i<capacity;i++){
-      new->buckets[i] = createPair(NULL,NULL);
+      new->buckets[i] = (Pair*)calloc(1,sizeof(Pair));
     }
     
     new->current = -1;
