@@ -57,7 +57,7 @@ HashMap * createMap(long capacity) {
     long i;
     HashMap* new = (HashMap*)calloc(1,sizeof(HashMap));
     
-    Pair* p = (Pair)calloc(capacity,sizeof(Pair))
+    Pair* p = (Pair)calloc(capacity,sizeof(Pair));
     new->capacity = capacity;
     new->current = -1;
     return new;
