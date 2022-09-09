@@ -60,10 +60,9 @@ HashMap * createMap(long capacity) {
     
     for(i=0; i<capacity;i++){
       new->buckets[i] = createPair(NULL,NULL);
-      
     }
     
-    new->current = 1;
+    new->current = -1;
     return new;
 }
 
