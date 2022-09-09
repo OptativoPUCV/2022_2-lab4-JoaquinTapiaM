@@ -110,3 +110,13 @@ hashmap.c:61:12: error: expected identifier before ‘*’ token
       |            ^
 Compilation failed
 186834f
+Fri 09 Sep 2022 12:37:32 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘createMap’:
+hashmap.c:61:22: error: invalid operands to binary * (have ‘Pair *’ and ‘void *’)
+   61 |       new->buckets[i]*= NULL;
+      |                      ^~
+Compilation failed
+3244622
