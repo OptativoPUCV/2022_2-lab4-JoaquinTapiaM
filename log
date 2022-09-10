@@ -605,3 +605,29 @@ Sat 10 Sep 2022 05:10:41 PM UTC:
  tests:  16|1
 total_score: 60/70
 5a67247
+Sat 10 Sep 2022 05:19:49 PM UTC: 
+ hashmap.c | 29 +++++++++++++++++++++++++++++
+ 1 file changed, 29 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:82:26: error: ‘map_buckets’ undeclared (first use in this function); did you mean ‘old_buckets’?
+   82 |     Pair** old_buckets = map_buckets;
+      |                          ^~~~~~~~~~~
+      |                          old_buckets
+hashmap.c:82:26: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:86:35: error: ‘capacity’ undeclared (first use in this function)
+   86 |     map->buckets = (Pair**)calloc(capacity,sizeof(Pair));
+      |                                   ^~~~~~~~
+hashmap.c:89:23: error: ‘old’ undeclared (first use in this function)
+   89 |         insertMap(map,old->buckets[i]->key,old->buckets[i]->value);
+      |                       ^~~
+hashmap.c:94:7: error: expected expression before ‘}’ token
+   94 |       }
+      |       ^
+hashmap.c:94:7: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+hashmap.c:80:6: note: declared here
+   80 | void enlarge(HashMap * map) {
+      |      ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8a4e886
