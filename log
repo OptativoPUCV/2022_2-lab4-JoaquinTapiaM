@@ -379,3 +379,16 @@ Sat 10 Sep 2022 04:20:59 PM UTC:
  tests:  12|2
 total_score: 50/70
 fd0e899
+Sat 10 Sep 2022 04:23:17 PM UTC: 
+ hashmap.c | 8 +++++---
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:174:8: error: expected ‘;’ before ‘if’
+  174 |     i++
+      |        ^
+      |        ;
+  175 |     if(map->buckets[i]!=NULL){
+      |     ~~  
+Compilation failed
+f112a04
