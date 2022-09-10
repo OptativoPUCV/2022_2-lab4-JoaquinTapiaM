@@ -373,3 +373,9 @@ hashmap.c:175:29: error: ‘current’ undeclared (first use in this function)
 hashmap.c:175:29: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 61bdab8
+Sat 10 Sep 2022 04:20:59 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  12|2
+total_score: 50/70
+fd0e899
