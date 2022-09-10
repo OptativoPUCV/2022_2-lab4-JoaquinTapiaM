@@ -90,6 +90,9 @@ void eraseMap(HashMap * map,  char * key) {
     long i = hash(key,map->capacity);
     long cont = 0;
     while (1){
+      if(map->buckets[i]==NULL){
+        return;
+      }
       if(is_equal(key,map->buckets[i]->key)==1){
         map->buckets[i]->key = NULL;
         map->size --;
