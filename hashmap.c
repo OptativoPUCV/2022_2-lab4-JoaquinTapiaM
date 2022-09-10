@@ -155,7 +155,7 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     long i = 0;
     while(1){
-      if(is_equal(map->buckets[i]->key,NULL)==0)|| map->buckets[i]->key!=NULL{
+      if(is_equal(map->buckets[i]->key,NULL)==0||map->buckets !=NULL) {
         map->current = i;
         return map->buckets[i];
       }
