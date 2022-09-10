@@ -486,3 +486,13 @@ Sat 10 Sep 2022 04:53:31 PM UTC:
  tests:  12|2
 total_score: 50/70
 d82a305
+Sat 10 Sep 2022 04:53:56 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘firstMap’:
+hashmap.c:158:49: error: expected expression before ‘||’ token
+  158 |       if(is_equal(map->buckets[i]->key,NULL)==0)|| map->buckets[i]->key!=NULL{
+      |                                                 ^~
+Compilation failed
+e71eaa1
