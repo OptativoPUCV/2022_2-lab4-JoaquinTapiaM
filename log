@@ -646,3 +646,14 @@ hashmap.c:89:23: error: ‘old’ undeclared (first use in this function)
       |                       ^~~
 Compilation failed
 1747c01
+Sat 10 Sep 2022 05:20:26 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:89:23: error: ‘old’ undeclared (first use in this function)
+   89 |         insertMap(map,old->buckets[i]->key,old->buckets[i]->value);
+      |                       ^~~
+hashmap.c:89:23: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1402e25
