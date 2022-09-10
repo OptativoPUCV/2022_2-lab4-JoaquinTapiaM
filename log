@@ -452,3 +452,15 @@ Sat 10 Sep 2022 04:48:53 PM UTC:
  tests:  12|2
 total_score: 50/70
 2fe0525
+Sat 10 Sep 2022 04:49:33 PM UTC: 
+ hashmap.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:173:24: error: ‘key’ undeclared (first use in this function); did you mean ‘key_t’?
+  173 |     if(map->buckets[i]-key!=NULL){
+      |                        ^~~
+      |                        key_t
+hashmap.c:173:24: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+ddf1fe1
