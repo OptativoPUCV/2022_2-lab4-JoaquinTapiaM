@@ -362,3 +362,14 @@ Sat 10 Sep 2022 04:17:13 PM UTC:
  tests:  12|2
 total_score: 50/70
 a63c613
+Sat 10 Sep 2022 04:20:44 PM UTC: 
+ hashmap.c | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+hashmap.c: In function ‘nextMap’:
+hashmap.c:175:29: error: ‘current’ undeclared (first use in this function)
+  175 |         return map->buckets[current];
+      |                             ^~~~~~~
+hashmap.c:175:29: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+61bdab8
