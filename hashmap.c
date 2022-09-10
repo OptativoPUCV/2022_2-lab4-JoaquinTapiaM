@@ -170,7 +170,7 @@ Pair * nextMap(HashMap * map) {
   long i = map->current;
   while(1){
     i++;
-    if(map->buckets[i]-key!=NULL){
+    if(map->buckets[i]->key!=NULL){
       map->current = i;
       return map->buckets[i];
     }
