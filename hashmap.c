@@ -169,10 +169,10 @@ Pair * firstMap(HashMap * map) {
 Pair * nextMap(HashMap * map) {
   long i = map->current;
   while(1){
+    i++;
     if(map->buckets[i]!=NULL){
       map->current = i;
       return map->buckets[i];
     }
-    i++;
   }
 }
