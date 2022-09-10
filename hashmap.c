@@ -155,11 +155,11 @@ Pair * searchMap(HashMap * map,  char * key) {
 Pair * firstMap(HashMap * map) {
     long i = 0;
     while(1){
-      if(map->buckets!=NULL){
+      if(map->buckets[i]!=NULL){
         map->current = i;
         return map->buckets[i];
       }
-      
+      i++;
       if(i==map->capacity){
         return NULL;
       }
