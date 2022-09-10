@@ -148,9 +148,22 @@ Pair * searchMap(HashMap * map,  char * key) {
     return NULL;
 }
 
-Pair * firstMap(HashMap * map) {
 
-    return NULL;
+//5.- Implemente las funciones para recorrer la estructura: Pair * firstMap(HashMap * map) retorna el primer **Pair** válido del arreglo buckets. Pair * nextMap(HashMap * map) retorna el siguiente **Pair** del arreglo buckets a partir índice current. Recuerde actualizar el índice.
+
+
+Pair * firstMap(HashMap * map) {
+    long i = 0;
+    while(1){
+      if(map->buckets!=NULL){
+        map->current = i;
+        return map->buckets[i];
+      }
+      i++;
+      if(i==map->capacity){
+        return NULL;
+      }
+    }
 }
 
 Pair * nextMap(HashMap * map) {
