@@ -631,3 +631,18 @@ hashmap.c:80:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 8a4e886
+Sat 10 Sep 2022 05:20:01 PM UTC: 
+ hashmap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+hashmap.c: In function ‘enlarge’:
+hashmap.c:82:26: error: ‘map_buckets’ undeclared (first use in this function); did you mean ‘old_buckets’?
+   82 |     Pair** old_buckets = map_buckets;
+      |                          ^~~~~~~~~~~
+      |                          old_buckets
+hashmap.c:82:26: note: each undeclared identifier is reported only once for each function it appears in
+hashmap.c:89:23: error: ‘old’ undeclared (first use in this function)
+   89 |         insertMap(map,old->buckets[i]->key,old->buckets[i]->value);
+      |                       ^~~
+Compilation failed
+1747c01
