@@ -159,10 +159,6 @@ Pair * firstMap(HashMap * map) {
         map->current = i;
         return map->buckets[i];
       }
-      i++;
-      if(i==map->capacity){
-        return NULL;
-      }
     }
 }
 
