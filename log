@@ -668,3 +668,9 @@ hashmap.c:89:43: error: ‘old’ undeclared (first use in this function)
 hashmap.c:89:43: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 3095ea4
+Sat 10 Sep 2022 05:21:05 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  17|0
+total_score: 70/70
+1590532
