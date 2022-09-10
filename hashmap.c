@@ -168,13 +168,11 @@ Pair * firstMap(HashMap * map) {
 
 Pair * nextMap(HashMap * map) {
   long cont =0;
-  long i = map->current;
   while(1){
     cont++;
-    i++;
-    if(map->buckets[i]!=NULL){
-        map->current = i;
-        return map->buckets[i];
+    map->current++;
+    if(map->buckets[map->current]!=NULL){
+        return map->buckets[map->current];
     }
     if(cont==map->capacity){
       return NULL;
